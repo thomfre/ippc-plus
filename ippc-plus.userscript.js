@@ -7,7 +7,9 @@
 // @run-at       document-start
 // @match        https://www.ippc.no/ippc/index.jsp
 // @icon         https://limanovember.aero/images/icon.png
-// @grant       GM_xmlhttpRequest
+// @grant        GM_xmlhttpRequest
+// @downloadURL  https://raw.githubusercontent.com/thomfre/ippc-plus/main/ippc-plus.userscript.js
+// @updateURL    https://raw.githubusercontent.com/thomfre/ippc-plus/main/ippc-plus.userscript.js
 // ==/UserScript==
 
 var _aisUrl;
