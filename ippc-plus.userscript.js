@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         IPPC.no Enhancements
 // @namespace    https://limanovember.aero/
-// @version      0.1
+// @version      0.2
 // @description  Try to make ippc.no a tiny bit better
 // @author       thomfre
 // @run-at       document-start
@@ -28,7 +28,7 @@ const parseAisFrontPage = (aisUrl, html) => {
 const loadAisUrl = () => {
   GM_xmlhttpRequest({
     method: "GET",
-    url: "https://ais.avinor.no/no/AIP/",
+    url: "https://aim-prod.avinor.no/no/AIP/",
     onload: (responseDetails) => {
       parseAisFrontPage(responseDetails.finalUrl, responseDetails.responseText);
     },
